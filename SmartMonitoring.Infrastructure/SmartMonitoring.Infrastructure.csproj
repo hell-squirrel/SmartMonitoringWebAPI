@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartMonitoring.Commons\SmartMonitoring.Commons.csproj" />
+    <ProjectReference Include="..\SmartMonitoring.Domain\SmartMonitoring.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
