@@ -18,32 +18,32 @@ For storage embedded database is used(SQLite). Can be swapped by implementing in
 ### Endpoint overview
 
 * **Get all Monitoring Assignments**
+
   `GET` HTTP with optional fields and pagination
+  
   *example*: `?label=test&pageSize=100&pageNumber=1`
   * label - Search by assignment label
   * pageSize - Page size
   * pageNumber - Page Number
-
-<br/><br/>
 *  **Create new Assignment with labels if required**
+
    `POST` HTTP with body:
-    >  {     
-            "name": "string",
+    >{  "name": "string",
             "port": 0,
             "maintainer": "string",
             "labels": ["string"] 
-    >  }
+     > }
 
     *example*: /services
-
-<br/><br/>
 * **Get Assignment by name**
+  
   `GET` HTTP 
+  
   *example*: `?services/assignmentName`
   * assignmentName - Name of assignment
 
-<br/><br/>
 * **Update Assignment by name**
+  
   `PUT` HTTP with body
     >{
         "port": 0,
@@ -54,12 +54,13 @@ For storage embedded database is used(SQLite). Can be swapped by implementing in
   *example*: `?services/assignmentName`
   * assignmentName - Name of assignment
 
-<br/><br/>
 * **Delete Assignment by name**
+  
   `DELETE` HTTP 
+  
+  
   *example*: `?services/assignmentName`
   * assignmentName - Name of assignment
-
 
 ### Generic response model
 
